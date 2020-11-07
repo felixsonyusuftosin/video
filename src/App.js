@@ -57,6 +57,8 @@ function App() {
       const { name } = firstFile
       const extArray = name.split('.')
       const ext = extArray[extArray.length - 1]
+      setStreamingLink('')
+      setLinkVisible(false)
       setExtension(ext)
       const temp = URL.createObjectURL(firstFile)
       setTmpPath(() => temp)
