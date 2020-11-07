@@ -51,7 +51,9 @@ body, html, #root {
   border: solid 1px rgba(0,0,0,0.3);
   padding: 0px 15px;
   box-sizing: border-box;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 20% auto;
+  grid-column-gap: 10px;
   align-items: center;
   font-size: 1rem;
   color: #444;
@@ -88,4 +90,14 @@ button:focus, button:active, button:visited {
 
 .hidden { 
   display: none;
+}
+.input { 
+  width: auto;
+  padding: 10px;
+  box-sizing: content-box;
+  border: solid 1px rgba(0,0,0,0.2);
+}
+
+.input:active, .input:hover, .input:focus { 
+  outline: none;
 }
